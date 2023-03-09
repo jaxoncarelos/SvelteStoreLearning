@@ -4,7 +4,7 @@
 </script>
 
 <div>
-    <CreateTodo class="todo"/>
+    <CreateTodo/>
     <TodoList/>
 </div>
 
