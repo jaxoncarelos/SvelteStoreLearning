@@ -14,4 +14,3 @@ function getLocalStorageValue(key, defaultValue) {
 
   }
 export const Todos = writable(getLocalStorageValue('JaxonTodos', []))
-

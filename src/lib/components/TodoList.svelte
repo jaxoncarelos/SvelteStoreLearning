@@ -1,9 +1,8 @@
 <script>
     import { Todos } from '../../stores/stores'
-    import {fade} from 'svelte/transition'
+    import { fade } from 'svelte/transition'
     let todos
-    Todos.subscribe(value => {todos = value})
-
+    Todos.subscribe(value => { todos = value })
     function updateValues(idx)
     {
         Todos.update(vals => {
@@ -14,6 +13,7 @@
         
     }
 </script>
+
 <div class="wrapper">
     {#each todos as todo (todo.idx)}
         <div transition:fade class="each">
